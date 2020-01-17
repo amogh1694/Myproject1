@@ -36,6 +36,7 @@ public class BaseSetup {
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("platformName", "Android");
         cap.setCapability("deviceName", "Pixel2");
+        cap.setCapability("app","C:\\Users\\Amogh.Gaekwad\\Downloads\\com.shaadi.android_2020-01-09.apk");
         cap.setCapability("appPackage", "com.shaadi.android");
         cap.setCapability("appActivity","com.shaadi.android.ui.achivement_splash.AchievementSplashActivity");
         cap.setCapability("noReset", true);

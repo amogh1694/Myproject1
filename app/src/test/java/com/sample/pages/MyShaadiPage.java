@@ -1,11 +1,12 @@
 package com.sample.pages;
 
-import com.sample.core.Driver;
+
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.sample.core.Driver;
 
 public class MyShaadiPage {
 
@@ -22,6 +23,11 @@ public class MyShaadiPage {
         {
             System.out.println("Premium Widget is present");
         }
+    }
+
+    public void scrollToNewMatches(){
+
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Members who joined recently\").instance(0))").click();
     }
 
     public void verifyNewMatches(){
